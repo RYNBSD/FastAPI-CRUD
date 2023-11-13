@@ -18,7 +18,7 @@ def get_blogs():
     return JSONResponse({
       "success": True,
       "blogs": blogs
-    }, status.HTTP_200_OK if len(blogs) > 1 else status.HTTP_204_NO_CONTENT)
+    }, status.HTTP_200_OK if len(blogs) > 0 else status.HTTP_204_NO_CONTENT)
   except Exception as e:
     return JSONResponse({
       "success":  False,
