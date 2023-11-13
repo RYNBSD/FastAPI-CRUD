@@ -19,7 +19,7 @@ def createTables():
       id INTEGER PRIMARY KEY AUTO_INCREMENT,
       title VARCHAR(255) NOT NULL,
       description VARCHAR(255) NOT NULL,
-      createsAt DATETIME NOT NULL DEFAULT NOW(),
+      createdAt DATETIME NOT NULL DEFAULT NOW(),
       updatedAt DATETIME NOT NULL DEFAULT NOW() ON UPDATE NOW()
     )"""
     )
